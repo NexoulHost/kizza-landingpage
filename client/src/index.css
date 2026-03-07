@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-display: 'Outfit', sans-serif;
+
+    /* Soft off-white background */
+    --background: 210 20% 98%;
+    /* Deep navy text/foreground */
+    --foreground: 226 60% 10%;
+
+    /* Crisp white cards */
+    --card: 0 0% 100%;
+    --card-foreground: 226 60% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 226 60% 10%;
+
+    /* Deep Navy Primary (#0a1128) */
+    --primary: 226 60% 10%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Soft gray secondary */
+    --secondary: 210 20% 94%;
+    --secondary-foreground: 226 60% 10%;
+
+    --muted: 210 20% 94%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 210 20% 90%;
+    --accent-foreground: 226 60% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 226 60% 10%;
+
+    --radius: 1.5rem;
+  }
+
+  .dark {
+    --background: 226 60% 10%;
+    --foreground: 0 0% 100%;
+    
+    --card: 226 50% 15%;
+    --card-foreground: 0 0% 100%;
+    
+    --popover: 226 50% 15%;
+    --popover-foreground: 0 0% 100%;
+    
+    --primary: 0 0% 100%;
+    --primary-foreground: 226 60% 10%;
+    
+    --secondary: 226 40% 20%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 226 40% 20%;
+    --muted-foreground: 215 20% 65%;
+    
+    --accent: 226 40% 20%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 226 40% 20%;
+    --input: 226 40% 20%;
+    --ring: 213 27% 84%;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
