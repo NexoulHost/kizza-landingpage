@@ -22,11 +22,7 @@ export function Header() {
           <button className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors">FAQ</button>
         </nav>
 
-        <ContactModal>
-          <button className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-semibold text-sm shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-0.5 transition-all duration-300">
-            Contact Us
-          </button>
-        </ContactModal>
+      
       </div>
     </header>
   );
