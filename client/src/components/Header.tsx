@@ -11,7 +11,7 @@ export function Header() {
             <Building2 className="w-5 h-5 text-primary-foreground" />
           </div>
           <span className="font-display font-bold text-xl text-primary tracking-tight">
-            Kizza Properties
+            Faisal Kizza Properties
           </span>
         </Link>
 
